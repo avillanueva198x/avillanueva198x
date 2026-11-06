@@ -1,0 +1,47 @@
+name: Update profile koi
+
+on:
+  schedule:
+    - cron: '20 0 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/koi.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-koi
+  cancel-in-progress: false
+
+jobs:
+  koi:
+    if: github.repository == 'avillanueva198x/avillanueva198x' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Render public GitHub activity
+        uses: yalongwastaken/git-koi@7305e9b1fadee6f43d3b4fa543a25d4cde79856e # v1.0.2
+        with:
+          login: avillanueva198x
+          body: white
+          output-dir: koi
+          token: ${{ github.token }}
+      - name: Commit the GIF only when it changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- koi/koi.gif
+          if git diff --cached --quiet; then
+            echo "The koi is unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --quiet --message "chore(profile): update public activity koi"
+          git push --quiet
