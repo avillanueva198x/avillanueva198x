@@ -41,12 +41,3 @@ Estos productos no se presentan como código abierto. No publico código, datos 
 Español nativo e **inglés hablado básico**. Para documentación y comunicación escrita puedo apoyarme en herramientas de traducción e IA. Mi conocimiento de React es básico y complementario a Java/Angular.
 
 Priorizo equipos hispanohablantes y colaboraciones remotas compatibles con mi perfil. Puedes contactarme por [LinkedIn](https://www.linkedin.com/in/adolfovillanueva/).
-
----
-
-### Un detalle de mi actividad pública
-
-<img src="koi/koi.gif" width="256" alt="Koi generado a partir de mi actividad pública en GitHub" />
-
-Este koi se genera con [git-koi](https://github.com/yalongwastaken/git-koi), de Anthony Yalong. Representa actividad pública de GitHub: **no mide mi experiencia ni incluye el trabajo en repositorios privados**.
-
