@@ -1,7 +1,7 @@
 # Adolfo Villanueva
 
 **Senior Java Backend Developer · Full Stack Java/Angular**  
-Más de 16 años desarrollando software empresarial para banca, pagos digitales, telecomunicaciones y sector público. Ubicado en Perú; interesado en contratos y proyectos **100 % remotos**.
+Más de 16 años desarrollando software empresarial para banca, pagos digitales, telecomunicaciones y sector público. Ubicado en Perú; interesado en **contratos y proyectos retadores**.
 
 [Portafolio y casos profesionales](https://portfolio.avillanueva.org.pe/) · [LinkedIn](https://www.linkedin.com/in/adolfovillanueva/) · [A2 Technology](https://www.a2technology.com.pe/)
 
